@@ -1,3 +1,3 @@
 "use strict";
-var hi = 'aaa';
+let hi = 'aaa';
 console.log(hi.toUpperCase());

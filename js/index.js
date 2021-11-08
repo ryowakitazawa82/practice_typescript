@@ -1,16 +1,16 @@
 "use strict";
-var hasValue = true;
-var count = 10;
-var float = 3.14;
-var negative = -0.12;
-var single = 'hello';
-var person = {
+let hasValue = true;
+let count = 10;
+let float = 3.14;
+let negative = -0.12;
+let single = 'hello';
+const person = {
     name: 'Jack',
     age: 21,
 };
-var fruits = ['apple', 'banana', 'greap'];
-var fruit = fruits[0];
-var book = ['business', 1500, false];
+const fruits = ['apple', 'banana', 'greap'];
+const fruit = fruits[0];
+const book = ['business', 1500, false];
 book[1] = 750;
 var coffeeSizes;
 (function (coffeeSizes) {
@@ -19,16 +19,16 @@ var coffeeSizes;
     coffeeSizes[coffeeSizes["GRANDE"] = 2] = "GRANDE";
     coffeeSizes[coffeeSizes["VENTI"] = 3] = "VENTI";
 })(coffeeSizes || (coffeeSizes = {}));
-var coffee = {
+const coffee = {
     hot: true,
     size: coffeeSizes.SHORT,
 };
-var unionType = 10;
+let unionType = 10;
 unionType = 'hello';
-var unionTypes = [21, 'hello'];
-var apple = 'apple';
-var banana = 'banana';
-var cloth = {
+let unionTypes = [21, 'hello'];
+let apple = 'apple';
+const banana = 'banana';
+const cloth = {
     color: 'white',
     size: 'midium'
 };
@@ -38,20 +38,20 @@ function add(num1, num2) {
 add(3, 2);
 function sayHello() {
 }
-var anotherAdd = add;
-var doubleNumber = function (number) { return number * 2; };
+const anotherAdd = add;
+const doubleNumber = number => number * 2;
 function doubleAndHandle(num, cb) {
-    var doubleNum = cb(num * 2);
+    const doubleNum = cb(num * 2);
 }
-doubleAndHandle(21, function (doubleNum) {
+doubleAndHandle(21, doubleNum => {
     return doubleNum;
 });
-var unKnownInput;
-var anyInput;
+let unKnownInput;
+let anyInput;
 unKnownInput = 'hello world';
 unKnownInput = 21;
 unKnownInput = true;
-var text;
+let text;
 text = anyInput;
 function error(message) {
     throw new Error(message);
