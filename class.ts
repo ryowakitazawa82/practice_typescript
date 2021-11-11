@@ -1,12 +1,9 @@
 // クラス名は一般的に最初は大文字
 class Person {
-    name: string;
-    private age: number; // 後から変更したくない！そんなときはprivate修飾子
-    
-    constructor(initName: string, initAge:number) {
-        this.name = initName;
-        this.age = initAge;
+    constructor(public name: string, private age:number)
+    {
     }
+    // これで全ての初期化が完了
 
     incrementAge() {
         this.age += 1;
