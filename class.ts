@@ -21,3 +21,5 @@ const yocchan = new Person('Yocchan', 19);
 yocchan.incrementAge();
 yocchan.greeting();
 
+
+// readonly 　読むだけになる、書けなくなる
