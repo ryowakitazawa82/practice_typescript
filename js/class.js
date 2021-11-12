@@ -11,7 +11,6 @@ class Person {
         console.log(`Hello My name is ${this.name}. I am ${this.age} years old.`);
     }
 }
-let person2;
-const yocchan = new Person('Yocchan', 19);
-yocchan.incrementAge();
-yocchan.greeting();
+class Theacher extends Person {
+}
+const teacher = new Theacher('Yocchan', 19);

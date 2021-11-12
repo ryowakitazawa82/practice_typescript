@@ -16,10 +16,16 @@ class Person {
         console.log(`Hello My name is ${this.name}. I am ${this.age} years old.`);
     }
 }
-let person2: Person;
-const yocchan = new Person('Yocchan', 19);
-yocchan.incrementAge();
-yocchan.greeting();
+// let person2: Person;
+// const yocchan = new Person('Yocchan', 19);
+// yocchan.incrementAge();
+// yocchan.greeting();
 
 
 // readonly 　読むだけになる、書けなくなる
+
+class Theacher extends Person {
+
+}
+const teacher = new Theacher('Yocchan', 19);
+
