@@ -25,7 +25,18 @@ class Person {
 // readonly 　読むだけになる、書けなくなる
 
 class Theacher extends Person {
-
+    get subject() {
+        return 'Music'
+    }
+    constructor(name: string, age: number, private _subject: string){
+        super(name, age);
+    }
+    greeting() {
+        console.log(`Hello! My name is ${this.name}. I am ${this.age} yaers`)
+    }
 }
-const teacher = new Theacher('Yocchan', 19);
+
+const teacher = new Theacher('Yocchan', 19,'Math');
+console.log(teacher.subject);
+teacher.greeting();
 
